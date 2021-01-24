@@ -1,6 +1,6 @@
 {
     "name": "afaanbilal/php-random-string",
-    "description": "Generate a random string of variable length with an optional prefix",
+    "description": "Generate a random string of variable length from a given charset",
     "type": "library",
     "license": "MIT",
     "authors": [

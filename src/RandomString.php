@@ -4,6 +4,7 @@
  * 
  * @author Afaan Bilal
  * @link https://afaan.dev
+ * @link https://packagist.org/packages/afaanbilal/php-random-string
  * @license MIT
  */
 declare(strict_types=1);

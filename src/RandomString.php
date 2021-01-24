@@ -6,6 +6,7 @@
  * @link https://afaan.dev
  * @license MIT
  */
+declare(strict_types=1);
 
 namespace AfaanBilal\RandomString;
 
@@ -16,14 +17,14 @@ class RandomString
      * 
      * @var int
      */
-    private $length = 12;
+    private int $length = 12;
 
     /**
      * The charset
      * 
      * @var string
      */
-    private $charset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    private string $charset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
     /**
      * Constructor
@@ -37,8 +38,6 @@ class RandomString
     {
         $this->length = $length;
         $this->charset = $charset ?? $this->charset;
-
-        return $this;
     }
 
     /**
@@ -46,7 +45,7 @@ class RandomString
      * 
      * @return string
      */
-    public function generate()
+    public function generate(): string
     {
         $max = strlen($this->charset);
         

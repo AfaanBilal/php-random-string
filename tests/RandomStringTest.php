@@ -19,4 +19,10 @@ final class RandomStringTest extends TestCase
             strlen((new RandomString(10))->generate())
         );
     }
+
+    public function testIsOfCorrectCharset(): void
+    {
+        $str = (new RandomString(12, 'abcde'))->generate();
+        $this->assertTrue(!preg_match('/[^abcde$]/', $str));
+    }
 }

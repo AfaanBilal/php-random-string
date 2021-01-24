@@ -15,13 +15,16 @@ composer require afaanbilal/php-random-string
 ````php
 // Default length is 12 characters
 // Default charset is ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
-(new \AfaanBilal\RandomString\RandomString())->generate();                                  // -> Kfx70JiRotb4
+(new \AfaanBilal\RandomString\RandomString())->generate();                                  
+// -> Kfx70JiRotb4
 
 // Generate a random string of 20 characters
-(new \AfaanBilal\RandomString\RandomString(20))->generate();                                // -> 92CYbvtEMXynllOZmNWK
+(new \AfaanBilal\RandomString\RandomString(20))->generate();                                
+// -> 92CYbvtEMXynllOZmNWK
 
 // Generate a random string of 25 characters from capital alphabets only
-(new \AfaanBilal\RandomString\RandomString(25, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'))->generate();  // -> ZEIXAISRXEHFOADNXNHOIWKSF
+(new \AfaanBilal\RandomString\RandomString(25, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'))->generate();  
+// -> ZEIXAISRXEHFOADNXNHOIWKSF
 ````
 
 ## Contributing
